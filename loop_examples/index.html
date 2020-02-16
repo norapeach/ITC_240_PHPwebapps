@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examples: Loops &amp; Conditional Statement</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body>
+        <main>
+            <h1>Loop &amp; Conditional Statement Examples</h1>
+            <p> Enter a meal price amount, tip and tax percentages and the subtotal will be calculated and evaluated after the form is submitted</p>
+            <form action="display_loops.php" method="POST">
+                <div id="data">
+                    <label>Meal Cost:</label>
+                    <input type="text" name="meal_cost"><br />
+                    
+                    <label>Tip Percent:</label>
+                    <input type="text" name="tip_percent"><span>%</span><br />
+
+                    <label>Tax Percent:</label>
+                    <input type="text" name="tax_percent"><span>%</span><br />
+                </div>
+
+                <div id="buttons">
+                    <label>&nbsp;</label>
+                    <input type="submit" value="Calculate Total"><br />
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

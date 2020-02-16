@@ -1,0 +1,6 @@
+# Ignore Mac System files
+.DS_store
+
+# Ignore PHP textbook files and test directories
+php3_allfiles
+test_files
