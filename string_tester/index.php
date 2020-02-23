@@ -30,12 +30,24 @@ switch ($action) {
         $name = ucwords($name);
 
         // get first name from complete name  
-        $i = strpos($name, ' ');
-        if ($i === false) {
+        $i1 = strpos($name, ' ');
+        if ($i1 === false) {
             $first_name = $name;
+            $middle_name = '';
+            $last_name = '';
         } else {
-            $first_name = substr($name, 0, $i);
-            $last_name = substr($name, $i + 1);
+            $first_name = substr($name, 0, $i1);
+        }
+
+        // if space in name, break in to middle and last names
+        $i2 = strpos($name, ' ', $i1 + 1); 
+        if ($i2 === false) {
+            $middle_name = '';
+            $last_name = substr($name, $i1 + 1);
+        } else {
+            $len = $i2 - $i1;
+            $middle_name = substr($name, $i1 + 1, $len);
+            $last_name = substr($name, $i2);
         }
 
         // validate email
@@ -64,14 +76,15 @@ switch ($action) {
 
         // format the phone number
         if (strlen($phone) == 7) {
+            $area = '';
             $part1 = substr($phone, 0, 3);
             $part2 = substr($phone, 3);
             $phone = $part1 . '-' . $part2;
         } else {
-            $part1 = substr($phone, 0, 3);
-            $part2 = substr($phone, 3, 3);
-            $part3 = substr($phone, 6);
-            $phone = $part1 . '-' . $part2 . '-' . $part3;
+            $area = substr($phone, 0, 3);
+            $part1 = substr($phone, 3, 3);
+            $part2 = substr($phone, 6);
+            $phone = $area . '-' . $part1 . '-' . $part2;
         }
 
         // format the message
@@ -83,10 +96,12 @@ switch ($action) {
             "Phone: $phone\n\n" .
 
             "First Name: {$first_name}\n" .
+            "Middle Name: {$middle_name}\n" .
             "Last Name: {$last_name}\n\n" .
+            
 
-            "Area Code: {$part1}\n" .
-            'Phone number: ' . $part2 . '-' . $part3;
+            "Area Code: {$area}\n" .
+            'Phone number: ' . $part1 . '-' . $part2;
 
         break;
 }
