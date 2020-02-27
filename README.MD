@@ -1,7 +1,10 @@
 # w20_IT240_PHPWebapps
 
 ## Introduction to PHP web application project files 
-Basic application pages written with PHP 
+Basic application pages written with PHP
+
+### 2/27 
+array_examples: 4 different examples using a variety of array functions to display data. 
 
 ### 2/22
 string_tester: a basic form with examples of using String functions to validate user inputted data. Returns a message if the Name field is left empty, also formats the name to trip starting and ending whitespace and capitalize the first letter in each word entered. 
