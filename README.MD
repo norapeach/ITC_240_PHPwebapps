@@ -3,6 +3,9 @@
 ## Introduction to PHP web application project files 
 Basic application pages written with PHP
 
+### 3/04
+user_defined_functions: isPalindrome($phrase) checks whether the string passed as an argument is a palindrome and returns a boolean. sortArray($array) doesn't use the PHP built-in sorting arrays, but uses for loops to return the sorted array.
+
 ### 2/27 
 array_examples: 4 different examples using a variety of array functions to display data. 
 

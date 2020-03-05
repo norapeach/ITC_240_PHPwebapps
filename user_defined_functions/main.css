@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    width: 450px;
+    margin: 0 auto;
+    padding: 1em;
+    background: white;
+    border: 2px solid navy;
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: navy;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+label {
+    display: block;
+    width: 8em;
+    text-align: right;
+    margin: 0;
+    padding: 0 1em;
+    float: left;
+}
+input, select {
+    display: block;
+    float: left;
+    margin-bottom: .5em;
+    margin-top: 0;
+}
+
+.submit {
+    margin-bottom: 0;
+    margin-left: .5em;
+    background: #87cefa;
+    transition: all .7s ease-in-out; 
+}
+.submit:hover,
+.submit:focus {
+    background: #ffb6c1;
+    
+}
+
+br {
+    clear: left;
+}
+
+li span {
+    padding-left: 1em;
+}
+
+p {
+    margin: .5em 0; 
+}
