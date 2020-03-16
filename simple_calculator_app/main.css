@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    width: 450px;
+    margin: 0 auto;
+    padding: 1em;
+    background: white;
+    border: 2px solid navy;
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: navy;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+label {
+    display: block;
+    width: 8em;
+    text-align: right;
+    margin: 0;
+    padding: 0 1em;
+    float: left;
+}
+
+input, select, span {
+    display: block;
+    float: left;
+    margin: 0 .5em .5em 0;
+}
+.hidden {
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    overflow: hidden;
+}
+
+.error {
+    color: #ff0000;
+    padding: 0 .5em;
+}
+
+.submit {
+    margin-bottom: 0;
+    margin-left: .5em;
+    background: #87cefa;
+    transition: all .7s ease-in-out; 
+}
+.submit:hover,
+.submit:focus {
+    background: #ffb6c1;
+    
+}
+
+br {
+    clear: left;
+}
+
+
+p {
+    margin: .5em 0; 
+}

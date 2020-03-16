@@ -3,6 +3,9 @@
 ## Introduction to PHP web application project files 
 Basic application pages written with PHP
 
+### 3/15 
+simple_calculator_app: demonstrates the use of the defined Calculator class to create a calculator object with methods to conduct basic arithmetic operations. The simple form validates user input for numeric or empty values.
+
 ### 3/04
 user_defined_functions: isPalindrome($phrase) checks whether the string passed as an argument is a palindrome and returns a boolean. sortArray($array) doesn't use the PHP built-in sorting arrays, but uses for loops to return the sorted array.
 
