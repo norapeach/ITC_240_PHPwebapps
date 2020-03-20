@@ -3,6 +3,9 @@
 ## Introduction to PHP web application project files 
 Basic application pages written with PHP
 
+### 3/19 
+form_short_register: dynamic web form following MVC pattern structure, using class files as the Model (no DB connection). Validator.php class uses regular expressions stored in a pattern variable and passed to a pattern function to validate the phone and email fields.
+
 ### 3/15 
 simple_calculator_app: demonstrates the use of the defined Calculator class to create a calculator object with methods to conduct basic arithmetic operations. The simple form validates user input for numeric or empty values.
 
