@@ -1,5 +1,5 @@
 <?php include 'header.php'; // top of html doc through closing header tag?>
-<main>
+<main class="main_flex">
     <!-- Main view that displays form & interacts with model/ classes -->
     <form action="." method="post">
     <!-- form action="." as not sent to db -->
@@ -31,6 +31,10 @@
         <input type="submit" name="action" value="Reset"/><br>
     </fieldset>
     </form>
+    <!-- adds password_generator form -->
+    <aside>
+        <?php include 'password_generator.php' ?>
+    </aside>
 </main>
 <?php include 'footer.php'; // dynamic footer plus closing <body><html> tags
 ?>

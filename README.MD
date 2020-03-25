@@ -3,6 +3,9 @@
 ## Introduction to PHP web application project files 
 Basic application pages written with PHP
 
+### 3/25
+ UPDATE - form_short_register: now includes password_generator functionality - a webform that generates a random password based on the character set configurations checked and submitted by user. Outputs random password to paragraph field on same page above the form.
+
 ### 3/19 
 form_short_register: dynamic web form following MVC pattern structure, using class files as the Model (no DB connection). Validator.php class uses regular expressions stored in a pattern variable and passed to a pattern function to validate the phone and email fields.
 
